@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-moss-green: #606c38ff;
+    --pakistan-green: #283618ff;
+    --cornsilk: #fefae0ff;
+    --earth-yellow: #dda15eff;
+    --tigers-eye: #bc6c25ff;
+    --fonte-titulo: "Open Sans", sans-serif;
+    --fonte-texto: "Lora", serif;
+}
+
+body {
+    background-color: var(--dark-moss-green);
+    font-family: var(--fonte-titulo);
+    font-size: 16px;
+
+}
+
+.cabecalho {
+    background-color: var(--pakistan-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+
+}
+
+.cabecalho-img {
+    width: 12%;
+    border-radius: 100%;
+}
+
+.cabecalho-nav__link {
+    text-decoration: none;
+    font-family: var(--fonte-texto);
+    font-size: 24px;
+    color: var(--earth-yellow);
+    margin-right: 14px;
+
+}
+
+.cabecalho-nav__link:hover {
+    color: var(--tigers-eye);
+    font-size: 30px;
+    transition: 0.5s;
+    text-shadow: 2px 2px 20px burlywood;
+}
+
+.principal-capa {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+    background-image: url(praia.jpg);
+    background-repeat: no-repeat;
+    padding: 24px 3px;
+    width: 100%;
+
+
+}
+
+
+.principal-capa__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.principal-capa__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 32px;
+    color: rgb(255, 254, 254);
+    margin-bottom: 12px;
+}
+.principal-capa__texto{
+    font-size: 24px;
+    margin-top: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.principal-capa_img {
+    width: 10%;
+    border-radius: 100%;
+    
+}
+
+.principal-capa_combotao {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.principal-capa_botao {
+    background-color: var(--violeta);
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 2em;
+    color: var(--dogwood);
+    text-decoration: none;
+}
+
+.principal-capa_botao:hover {
+    background-color: var(--dogwood);
+    color: var(--violeta);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.principal-capa_botao:active {
+    background-color: var(--espaço);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--isabelline);
+    color: var(--dogwood);
+}
+
+.propaganda {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0em;
+    margin-top: 1em;
+
+}
+
+.propaganda_produto {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: 20%;
+    
+    width: 50%;
+
+}
+
+.propaganda_conteudo {
+    background-color: var(--dark-moss-green);
+    padding: 20px;
+  
+   
+    margin-right: 20px;
+}
+
+.propaganda_titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 48px;
+    color: var(--fonte-titulo);
+    margin-right: 5px;
+}
+
+.propaganda_titulo:hover {
+    text-shadow: 3px 3px 5px var(--violeta);
+    transition: 0.7s;
+}
+
+.propaganda_texto {
+    font-family: var(--fonte-texto);
+    font-size: 24px;
+    color: var(--cornsilk);
+    margin-right: 5px;
+}
+
+.propaganda_texto:hover {
+    color: var(--dogwood);
+    transition: 1s;
+}
+.dispositivos{
+    text-align: center;
+    font-size: 48px;
+    color: var(--fonte-texto);
+}
+.dispositivo__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
